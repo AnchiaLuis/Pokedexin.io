@@ -1,0 +1,33 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Pokedex</h1>
+
+  <div class="container">
+    <!-- Formulario para registrar un nuevo Pokémon -->
+    <form id="pokemonForm">
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <!-- Agregar aquí otros campos del formulario como tipo, descripción, etc. -->
+      <button class="btn" type="submit">Registrar Pokémon</button>
+    </form>
+
+    <!-- Lista de Pokémones registrados -->
+    <ul class="list-group" id="pokemonList">
+      <!-- Los Pokémones se agregarán aquí dinámicamente -->
+    </ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
