@@ -39,18 +39,4 @@ async function start() {
   }
 }
 
-(async () => {
-  try {
-    await client.connect();
-    console.log('Conexión a MongoDB Atlas establecida');
-    const db = client.db('mydatabase'); 
-    cardsCollection = db.collection('cards'); 
-    app.listen(port, () => {
-      console.log(`Servidor escuchando en http://localhost:${port}`);
-    });
-  } catch (error) {
-    console.error('Error al conectar con MongoDB Atlas', error);
-  }
-})();
-
 start();
