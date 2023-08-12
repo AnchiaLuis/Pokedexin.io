@@ -1,17 +1,22 @@
 body {
-    font-family: 'Courier New', monospace;
-    background-color: #8CBED6;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
+  font-family: 'Courier New', monospace;
+  background-image: url('https://th.bing.com/th/id/R.cf3a41a16aa67ef0c4fe34ee56e7f8f5?rik=khcIfoDGlSFziw&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff; 
+  font-weight: bold; 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
   
   form {
     display: flex;
@@ -119,7 +124,7 @@ body {
     background-color: #2c8a4e;
     height: 100px; /* Ajusta la altura según tus necesidades */
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     clip-path: polygon(0 90%, 100% 70%, 100% 100%, 0 100%);
@@ -132,4 +137,30 @@ body {
     width: 200px;
     height: 150px;
 
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed; 
+}
+
+table th,
+table td {
+  border: 1px solid #000;
+  padding: 8px;
+  width: 20%; 
+  box-sizing: border-box; 
+  padding: 40px !important;
+}
+
+#searchButton:hover,
+#loadPokemons:hover,
+#createPokemonButton:hover,
+#prevPage:hover,
+#nextPage:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  transition: background-color 0.3s;
+  border: 1px solid #AF0005;
 }
