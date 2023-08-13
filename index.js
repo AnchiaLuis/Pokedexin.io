@@ -4,7 +4,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 
 // Configurar el servidor Express
 const app = express();
-const port = 3500; // Puedes cambiar el puerto si es necesario
+const port = 3000; // Puedes cambiar el puerto si es necesario
 
 // Configurar la conexión a MongoDB
 const uri = 'mongodb+srv://anchiaprogram1:' + encodeURIComponent('hw85jSFpdTgDPW1J') + '@cluster0.tdratzf.mongodb.net/?retryWrites=true&w=majority';
