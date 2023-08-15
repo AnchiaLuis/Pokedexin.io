@@ -28,7 +28,7 @@ let cardsCollection;
 app.use(express.json());
 app.use(express.static('public'));
 
-// Ruta para registrar un nuevo pokémon
+
 app.post('/pokemon', async (req, res) => {
   try {
     const newPokemon = req.body;
