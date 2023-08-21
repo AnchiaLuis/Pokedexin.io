@@ -1,12 +1,17 @@
-// Importar las dependencias
 const express = require('express');
 const { MongoClient, ObjectId } = require('mongodb');
 
+<<<<<<< HEAD
 // Configurar el servidor Express
 const app = express();
 const port = 3000; // Puedes cambiar el puerto si es necesario
+=======
+>>>>>>> d9112c069206ecfaa1ab832eab9639f6b31e99e7
 
-// Configurar la conexión a MongoDB
+const app = express();
+const port = 3500; 
+
+
 const uri = 'mongodb+srv://anchiaprogram1:' + encodeURIComponent('hw85jSFpdTgDPW1J') + '@cluster0.tdratzf.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 let cardsCollection;
@@ -15,8 +20,8 @@ let cardsCollection;
   try {
     await client.connect();
     console.log('Conexión a MongoDB Atlas establecida');
-    const db = client.db('Pickachu'); // Cambia 'Pickachu' por el nombre correcto de tu base de datos
-    cardsCollection = db.collection('pokemones'); // Cambia 'pokemones' por el nombre correcto de tu colección
+    const db = client.db('Pickachu'); 
+    cardsCollection = db.collection('pokemones'); 
     app.listen(port, () => {
       console.log(`Servidor escuchando en http://localhost:${port}`);
     });
@@ -25,11 +30,11 @@ let cardsCollection;
   }
 })();
 
-// Middleware para permitir el análisis de JSON en las solicitudes
+
 app.use(express.json());
 app.use(express.static('public'));
 
-// Ruta para registrar un nuevo pokémon
+
 app.post('/pokemon', async (req, res) => {
   try {
     const newPokemon = req.body;
